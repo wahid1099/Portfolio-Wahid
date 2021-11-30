@@ -15,7 +15,9 @@ const Aboutme = () => {
                     <Col md={6} sm={12} className="mt-5"> 
                     <Bounce left>
                     <h2 className="text-start mt-5">I am Abdul Wahid</h2>
-                    <p className="text-start">I'm a mern stack devloper. I have worked with firebase, Mongo db, React, Express bootstrap and metarial ui. I am currently studying and learnig new technologies.</p>
+                    <p className="text-start">
+                        Hi, I'm Md wahid. I'm a student currently I'm studying computer science in Daffodil international university
+                        I'm a mern stack devloper. I have worked with firebase, Mongo db, React, Express bootstrap and metarial ui. I am currently studying and learnig new technologies.I have done some real projects on react and vanila javascript. My favourite programming languages is javascript because now a days we can use javascript anywhere.</p>
 
                     <h2 className="text-start mt-5">Connect With Me</h2>
                     <div className="text-start">

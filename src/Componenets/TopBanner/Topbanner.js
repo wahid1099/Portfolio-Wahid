@@ -2,6 +2,8 @@ import React from 'react';
 import Typical from 'react-typical';
 import {Button} from 'react-bootstrap';
 
+import { RiDownloadCloud2Fill } from "react-icons/ri";
+
 const Topbanner = () => {
     const steps = [
         'Hello 👋', 3000,
@@ -22,7 +24,7 @@ const Topbanner = () => {
 
                   <br/>
                   <Button variant="danger">
-                      <a target="_blank" href="https://drive.google.com/file/d/1WC-hGLETyxhQjj6xqTFtpn98ahmRg0no/view" className="text-decoration-none text-white">Download My Resume</a></Button>
+                      <a target="_blank" href="https://drive.google.com/file/d/1WC-hGLETyxhQjj6xqTFtpn98ahmRg0no/view" className="text-decoration-none text-white"><RiDownloadCloud2Fill/> Download My Resume</a></Button>
 
         </div>
     );
