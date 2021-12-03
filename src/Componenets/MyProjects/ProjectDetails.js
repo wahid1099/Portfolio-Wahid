@@ -3,6 +3,8 @@ import { Container, Row,Col,Button,Spinner ,Carousel} from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { RiGithubFill,RiEarthFill } from "react-icons/ri";
 import Menu from '../Header/Menu';
+import { BsCaretRightFill ,BsFillArrowRightCircleFill} from "react-icons/bs";
+
 const ProjectDetails = () => {
     const { projectId } = useParams();
     const [projectDetails,setProjectDetails]=useState({});
@@ -100,13 +102,13 @@ const ProjectDetails = () => {
                             </small></h5>
 
                             <div className="text-start">
-                            <h5>Technologies : </h5>
-                            <h6>FrameWork: {projectDetails.Technologies.frameworks}</h6>
-                            <h6>Css : {projectDetails.Technologies.css}</h6>
-                            <h6>Authetication: {projectDetails.Technologies.Authentication}</h6>
-                            <h6>Routing: {projectDetails.Technologies.routing}</h6>
-                            <h6>Server site: {projectDetails.Technologies.Serversite}</h6>
-                            <h6>Database: {projectDetails.Technologies.Database}</h6>
+                            <h5><BsCaretRightFill/> Technologies : </h5>
+                            <h6><BsFillArrowRightCircleFill/> FrameWork: {projectDetails.Technologies.frameworks}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Css : {projectDetails.Technologies.css}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Authetication: {projectDetails.Technologies.Authentication}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Routing: {projectDetails.Technologies.routing}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Server site: {projectDetails.Technologies.Serversite}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Database: {projectDetails.Technologies.Database}</h6>
                             </div>
                             <div>
               <Button variant="danger">

@@ -1,20 +1,26 @@
 import React,{useState,useEffect} from 'react';
-import {Row,Col,Card, Container,Button} from 'react-bootstrap';
-import Zoom from 'react-reveal/Zoom';
+import {Row,Col,Card, Container,Button,Spinner} from 'react-bootstrap';
+import Slide from 'react-reveal/Slide';
 import './myproject.css';
 import { Link } from 'react-router-dom';
 import Menu from '../Header/Menu';
 
 const Myproject = () => {
   const [projects,setProjects] = useState([]);
+  const [success,setSuccess] = useState(true);
   useEffect(() => {
     fetch('https://fathomless-ravine-51636.herokuapp.com/allprojects')
     .then(res=>res.json())
     .then(data=>(
-      setProjects(data)
+      setProjects(data),
+      setSuccess(false)
     ))
     
-  },[])
+  },[]);
+
+  if(success){
+    return <Spinner animation="border" />
+  }
 
 
   console.log(projects);
@@ -32,7 +38,7 @@ const Myproject = () => {
               {
                 projects?.map(project =>(
                 
-                  <Zoom left>
+                  <Slide right>
                 <Col>
                 <Card className="cardzoom">
   <Card.Img variant="top" src={project.img} />
@@ -49,7 +55,7 @@ const Myproject = () => {
           
                   
                   </Col>
-                  </Zoom>
+                  </Slide>
                  
                 ))
               }
