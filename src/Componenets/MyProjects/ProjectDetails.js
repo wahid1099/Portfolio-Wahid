@@ -32,7 +32,7 @@ const ProjectDetails = () => {
     }
 
     return (
-        <div>
+        <div className="text-black">
            <Menu></Menu>
 
             <h1 className="mt-5">Project Name:{projectDetails.name}</h1>

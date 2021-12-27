@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Menu = () => {
     return (
-       <Navbar   expand="lg" style={{backgroundColor:'#000'}}>
+       <Navbar   expand="lg"  style={{background:'#4568dc'}}>
   <Container>
     
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +16,7 @@ const Menu = () => {
         </Nav.Link>
         <Nav.Link href="#aboutme"  className="text-white ps-5">About me</Nav.Link>
         <Nav.Link  className="text-white ps-5"> <Link to="/myprojects" className="text-decoration-none text-white">My Projects</Link></Nav.Link>
-        <Nav.Link href="#link"  className="text-white ps-5">Portfolio</Nav.Link>
+        <Nav.Link  className="text-white ps-5"><Link to="/myblogs" className="text-decoration-none text-white" >My Blogs</Link></Nav.Link>
         <Nav.Link href="#contactme"  className="text-white ps-5">Contact me</Nav.Link>
         
       </Nav>

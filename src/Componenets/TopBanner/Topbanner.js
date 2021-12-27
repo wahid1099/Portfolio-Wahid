@@ -11,7 +11,7 @@ const Topbanner = () => {
         'I am Mern stack devloper 👌', 3000,
         'I am open source devloper', 3000,
        'I am quick learner', 3000,
-        'Contact me for more info', 2000
+        'Contact me for more info', 3000
         
       ];
     return (

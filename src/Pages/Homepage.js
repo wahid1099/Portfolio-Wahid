@@ -8,26 +8,14 @@ import  Contactme from '../Componenets/ContactMe/Contactme';
 import  Footer from '../Componenets/Footer/Footer';
 import Myskills from '../Componenets/MySkills/Myskills';
 import Tools from '../Componenets/Tools/Tools';
+import TopContent from "../Componenets/TopContent/TopContent";
 
 function componentName() {
 
-    const bg={
-		background: `url('${codingbg}')`,
-        height:'500px',
-        backgroundSize:'cover',
-     
 
-	}
     return (
         <div>
-            <Menu></Menu>
-            <div style={bg}>
-            <div id="text_div center_all">
-	 <div className="center_all">
-	  <Topbanner></Topbanner>
-	 </div>
-   </div>
-  </div>   
+           <TopContent></TopContent>
   <Aboutme></Aboutme>
 <Myproject></Myproject>
 <Myskills></Myskills>

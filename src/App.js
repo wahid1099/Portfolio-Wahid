@@ -11,6 +11,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Myblogs from "./Componenets/MyBlogs/Myblogs";
+import BlogDetails from "./Componenets/MyBlogs/BlogDetails";
 
 function App() {
 
@@ -30,10 +32,12 @@ function App() {
            
             <Route  path="/myprojects" element={<MyprojectsPage />}>
             </Route>
+<Route path="/myblogs" element={<Myblogs/>}></Route>
+              <Route path={`/blog/:blogId`} element={<BlogDetails></BlogDetails>}>
+              </Route>
 
+              <Route path={`/projects/:projectId`} element={<ProjectDetails></ProjectDetails>}>
 
-
-<Route path={`/projects/:projectId`} element={<ProjectDetails></ProjectDetails>}>
 
 </Route>
 
