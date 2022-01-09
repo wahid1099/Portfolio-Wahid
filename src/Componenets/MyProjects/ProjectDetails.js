@@ -103,12 +103,12 @@ const ProjectDetails = () => {
 
                             <div className="text-start">
                             <h5><BsCaretRightFill/> Technologies : </h5>
-                            <h6><BsFillArrowRightCircleFill/> FrameWork: {projectDetails.Technologies.frameworks}</h6>
-                            <h6><BsFillArrowRightCircleFill/> Css : {projectDetails.Technologies.css}</h6>
-                            <h6><BsFillArrowRightCircleFill/> Authetication: {projectDetails.Technologies.Authentication}</h6>
-                            <h6><BsFillArrowRightCircleFill/> Routing: {projectDetails.Technologies.routing}</h6>
-                            <h6><BsFillArrowRightCircleFill/> Server site: {projectDetails.Technologies.Serversite}</h6>
-                            <h6><BsFillArrowRightCircleFill/> Database: {projectDetails.Technologies.Database}</h6>
+                            <h6><BsFillArrowRightCircleFill/> FrameWork: {projectDetails.Technologies?.frameworks}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Css : {projectDetails.Technologies?.css}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Authetication: {projectDetails.Technologies?.Authentication}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Routing: {projectDetails.Technologies?.routing}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Server site: {projectDetails.Technologies?.Serversite}</h6>
+                            <h6><BsFillArrowRightCircleFill/> Database: {projectDetails.Technologies?.Database}</h6>
                             </div>
                             <div>
               <Button variant="danger">

@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Myblogs from "./Componenets/MyBlogs/Myblogs";
 import BlogDetails from "./Componenets/MyBlogs/BlogDetails";
+import AddProjects from "./Componenets/Dashboard/AddProjects";
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
             
           <Route path="/home" element={<Homepage/>}>
             </Route>
+              <Route path="/add" element={<AddProjects/>}>
+              </Route>
 
            
             <Route  path="/myprojects" element={<MyprojectsPage />}>

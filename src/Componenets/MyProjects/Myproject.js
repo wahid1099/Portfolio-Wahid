@@ -16,7 +16,7 @@ const Myproject = () => {
       setSuccess(false)
     ))
     
-  },[]);
+  },[projects]);
 
   if(success){
     return <Spinner animation="border" />
